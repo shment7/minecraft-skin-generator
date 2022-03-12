@@ -1,0 +1,13 @@
+
+<button onclick="location.href = 'http://minecraftskingenerator.pythonanywhere.com/{{ seed }}';" id="myButton" class="float-left submit-button" >Generate Skin</button>
+<script>
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
+</script>
